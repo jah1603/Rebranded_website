@@ -55,7 +55,7 @@ const projects = [
 	{
 		name: 'Website for a Developer',
 		description: 'This is my former personal website, which I designed and built entirely from scratch using no plug-ins whatsoever. Originally it was intended as a portfolio website where I would be able to document all my projects and showcase what I considered to be my best work.',
-		description_part_two: "I used React.js and jQuery to make the site, which features a bespoke image carousel which is responsive enough to work on mobile devices. Although I would ultimately abandon the site in favour of the more modern design seen here, it is still lives on as a legacy piece.",
+		description_part_two: "I used React.js and jQuery to make the site, which features a bespoke image carousel which is responsive enough to work on mobile devices. Although I would ultimately abandon the site in favour of the more modern design seen here, it still lives on as a legacy piece.",
 		image: james,
 		url: "https://jamesahenderson.netlify.com/",
 		icons: [{name: "React.js", class: 'devicon-react-plain colored'}, {name: "jQuery", class: 'devicon-jquery-plain-wordmark colored'}]
