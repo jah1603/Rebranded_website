@@ -1,4 +1,4 @@
-import nuv from './NüV.png';
+import nuv from './nuv-iphone.png';
 import findasaur from './findasaur2.png';
 import w2walk from './wtowalk.png';
 import w2wed from './wtowed.png';
@@ -12,8 +12,8 @@ import w2bbqVid from './W2BBQ.mp4';
 const projects = [
 	{
 		name: 'NüV',
-		description: "This 'VegTech' project was a joint venture between David Pears, Stephen Rooney and I. We built the mobile app in React Native with a Heroku-hosted backend made in Ruby on Rails. NüV allows users to share, view and rate recipes, venues, brands and media items, with restaurants being filtered by geolocation.",
-		description_part_two: 'NüV features JSON web token authentication, image hosting via Cloudinary, a responsive cross-platform design, more than 50 React components/containers, and also boasts a growing user base. The mobile app is available for download from both the iOS and Android stores as of the end of February 2019.',
+		description: "This 'VegTech' project was a joint venture between David Pears, Stephen Rooney and I. We built the mobile app in React Native with a Heroku-hosted backend made in Ruby on Rails. NüV allows users to share, view and rate recipes, venues, brands and media items, with commenting and real-time chat also possible.",
+		description_part_two: 'NüV features action cable web sockets, JSON web token authentication, image hosting via Cloudinary, a responsive cross-platform design, more than 50 React components/containers, and also boasts a growing user base. The mobile app is available for download from both the iOS and Android stores as of the end of February 2019.',
 		image: nuv,
 		url: "https://play.google.com/store/apps/details?id=com.levelapps.nuv",
 		apple_url: "https://itunes.apple.com/us/app/n%C3%BCv/id1455339660?ls=1&mt=8",
