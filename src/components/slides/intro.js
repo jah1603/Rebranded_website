@@ -66,7 +66,7 @@ export default class Intro extends Component {
 								<img className="contact-icon wow fadeInDown" data-wow-delay="100ms"  src={require("../../assets/android.png")} alt="Android Store Link" width={this.state.android ? this.state.android.width : 0} height={this.state.android ? this.state.android.width : 0} ></img>
 							</a>
 
-							<a className="text-container wow fadeInDown" data-wow-delay="100ms" href="https://itunes.apple.com/us/app/n%C3%BCv/id1455339660?ls=1&mt=8" className="us_link" target="_blank">
+							<a className="text-container wow fadeInDown" data-wow-delay="100ms" href="https://itunes.apple.com/us/developer/james-alexander/id1455339659" className="us_link" target="_blank">
 								<img className="contact-icon wow fadeInDown" data-wow-delay="100ms" src={require("../../assets/apple.png")} alt="Apple Store Link" width={this.state.android ? this.state.android.width : 0} height={this.state.android ? this.state.android.width : 0}></img>
 							</a>
 
