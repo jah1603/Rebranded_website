@@ -65,8 +65,6 @@ export default class Projects extends Component {
 			int += 90;
 			let extraMargin = window.innerWidth < 840 ? (0.7 * window.innerWidth / 2) : 300
 			let margin = ((12.5 * i) + (6)).toString()
-			console.log("margin: ", margin);
-			console.log("Window width", window.innerWidth);
 			return(
 				<div
 					className="slide project wow fadeInUp"
