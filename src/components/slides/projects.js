@@ -95,11 +95,18 @@ export default class Projects extends Component {
 												<p style={{fontSize: '0.9rem'}}>{project.description_part_two}</p>
 											) : null
 										}
+										{ project.see_more === false ? (
+											null
+										) :
                         <Button
                         	className="learn-more"
                         	intent={Intent.PRIMARY}
                         	onClick={() => this.learnMore(project.url)}
-                        >See more</Button>
+                        >
+												See more
+												</Button>
+											}
+
                     </Project>
                     <img
 										 key={i} style={{ width: project.mobile === true ? '100%' : '100%'}} src={project.image} alt={project.description}/>
