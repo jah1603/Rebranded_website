@@ -147,7 +147,7 @@ export default class Projects extends Component {
 							</div>
 
 							<div id={"openModal" + i} className="modalbg">
-							<div className="dialog" style={{marginLeft: ((11.1111111 * i) + 3.333).toString() + '%'}}>
+							<div className="dialog" style={{marginLeft: ((11.1111111 * i) + 2.8).toString() + '%'}}>
 								<a href={"#close" + i} title="Close" className="close2">X</a>
 								<video width="45%" style={{borderRadius: i===3 ? 0 :43}} controls>
 													<source src={project.video} type="video/mp4"></source>
