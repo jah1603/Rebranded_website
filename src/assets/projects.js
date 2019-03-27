@@ -24,7 +24,7 @@ const projects = [
 	},
 	{
 		name: 'NüV - web version',
-		description: "A 'VegTech' project which emerged out of joint venture between David Pears, Stephen Rooney and I. We are building the website in React.js with a Heroku-hosted backend made in Ruby on Rails. The NüV website allows users to share, view and rate recipes, venues, brands and media items, with many of the features accessible even without creating a NüV account.",
+		description: "A 'VegTech' project which emerged out of a joint venture between David Pears, Stephen Rooney and I. We are building the website in React.js with a Heroku-hosted backend made in Ruby on Rails. The NüV website allows users to share, view and rate recipes, venues, brands and media items, with many of the features accessible even without creating a NüV account.",
 		description_part_two: 'NüV features action cable web sockets, JSON web token authentication, image hosting via Cloudinary, a responsive cross-platform design, more than 50 React components/containers, and also boasts a growing user base. The website is currently under construction and is scheduled to be finished by the end of April 2019.',
 		image: nuvweb,
 		see_more: false,
