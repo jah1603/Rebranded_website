@@ -8,11 +8,12 @@ import reach from './reachdating.png';
 import james from './james_site.png';
 import findasaurVid from './findasaur2.mp4';
 import w2bbqVid from './W2BBQ.mp4';
+import nuvweb from './nuv_web.png';
 
 const projects = [
 	{
 		name: 'NüV',
-		description: "This 'VegTech' project was a joint venture between David Pears, Stephen Rooney and I. We built the mobile app in React Native with a Heroku-hosted backend made in Ruby on Rails. NüV allows users to share, view and rate recipes, venues, brands and media items, with commenting and real-time chat also possible.",
+		description: "This 'VegTech' project was a joint venture between David Pears, Stephen Rooney and I. We built the mobile app in React Native with a Heroku-hosted backend made in Ruby on Rails. NüV allows users to share, view and rate recipes, venues, brands and media items, and also offers a barcode scanner, commenting and real-time chat.",
 		description_part_two: 'NüV features action cable web sockets, JSON web token authentication, image hosting via Cloudinary, a responsive cross-platform design, more than 50 React components/containers, and also boasts a growing user base. The mobile app is available for download from both the iOS and Android stores as of the end of February 2019.',
 		image: nuv,
 		url: "https://play.google.com/store/apps/details?id=com.levelapps.nuv",
@@ -20,6 +21,13 @@ const projects = [
 		apple: true,
 		mobile: true,
 		icons: [{name: "React Native", class: 'devicon-react-plain colored'}, {name: "Ruby on Rails", class: 'devicon-rails-plain-wordmark colored'}, {name: "PostgreSQL", class: 'devicon-postgresql-plain-wordmark colored'}, {name: "Heroku", class: 'devicon-heroku-plain-wordmark colored'}]
+	},
+	{
+		name: 'NüV - web version',
+		description: "This 'VegTech' project was a joint venture between David Pears, Stephen Rooney and I. We built the website in React.js with a Heroku-hosted backend made in Ruby on Rails. NüV allows users to share, view and rate recipes, venues, brands and media items, with commenting and real-time chat also possible.",
+		description_part_two: 'NüV features action cable web sockets, JSON web token authentication, image hosting via Cloudinary, a responsive cross-platform design, more than 50 React components/containers, and also boasts a growing user base. The website is currently under construction and is scheduled to be finished by the end of April 2019.',
+		image: nuvweb,
+		icons: [{name: "React.jsn", class: 'devicon-react-plain-wordmark colored'}, {name: "Ruby on Rails", class: 'devicon-rails-plain-wordmark colored'}, {name: "PostgreSQL", class: 'devicon-postgresql-plain-wordmark colored'}, {name: "CSS3", class: 'devicon-css3-plain-wordmark colored'}]
 	},
 	{
 		name: 'Findasaur',
