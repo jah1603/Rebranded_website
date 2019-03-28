@@ -28,7 +28,7 @@ const projects = [
 		description_part_two: 'NüV features action cable web sockets, JSON web token authentication, image hosting via Cloudinary, a responsive cross-platform design, more than 50 React components/containers, and also boasts a growing user base. The website is currently under construction and is scheduled to be finished by the end of April 2019.',
 		image: nuvweb,
 		see_more: false,
-		icons: [{name: "React.jsn", class: 'devicon-react-plain-wordmark colored'}, {name: "Ruby on Rails", class: 'devicon-rails-plain-wordmark colored'}, {name: "PostgreSQL", class: 'devicon-postgresql-plain-wordmark colored'}, {name: "CSS3", class: 'devicon-css3-plain-wordmark colored'}]
+		icons: [{name: "React.js", class: 'devicon-react-plain-wordmark colored'}, {name: "Ruby on Rails", class: 'devicon-rails-plain-wordmark colored'}, {name: "PostgreSQL", class: 'devicon-postgresql-plain-wordmark colored'}, {name: "CSS3", class: 'devicon-css3-plain-wordmark colored'}]
 	},
 	{
 		name: 'Findasaur',
