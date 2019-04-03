@@ -8,7 +8,7 @@ import reach from './reachdating.png';
 import james from './james_site.png';
 import findasaurVid from './findasaur2.mp4';
 import w2bbqVid from './W2BBQ.mp4';
-import nuvweb from './nuv_web.png';
+import nuvweb from './nuvphoto.png';
 
 const projects = [
 	{
