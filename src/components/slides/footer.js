@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
 	return(
 		<div className="section fifth fp-auto-height">
-				<div style={{marginBottom: 20}} className="footer social-links">
+				<div className="footer social-links">
 					<p>FIND ME ONLINE</p>
 		          	<span>
 		          		<a href="https://itunes.apple.com/us/app/n%C3%BCv/id1455339660?ls=1&mt=8" target="_blank" rel="noopener noreferrer">
@@ -30,7 +30,7 @@ const Footer = () => {
 		          			<i className="fa fa-twitter fa-2x"></i>
 		          		</a>
 		          	</span>
-								<p style={{fontSize: 8}}>© James Henderson 2019. All Rights Reserved</p>
+								<p style={{fontSize: 9}}>© James Henderson 2019. All Rights Reserved</p>
 		        </div>
 		</div>
 	)
