@@ -3,7 +3,7 @@ import { InputGroup, TextArea, Toaster, Intent, Position } from "@blueprintjs/co
 import axios from "axios";
 
 const AppToaster = Toaster.create({
-    position: Position.TOP
+    position: window.innerWidth < 460 ? Position.BOTTOM : Position.TOP
 });
 
 export default class Contact extends Component {
@@ -25,7 +25,7 @@ export default class Contact extends Component {
 		AppToaster.show({
 			message: message,
 			intent: intent,
-			timeout: 3000
+			timeout: 3000,
 		})
 	}
 
@@ -73,7 +73,7 @@ export default class Contact extends Component {
 		return(
 			<div className="section fourth">
 				<h1 className="app-title">Contact Me</h1>
-				<p>Feel free to get in touch with me. Even if it's just to say hello, I would love to hear from you!</p>
+				<p className="contact-text">Feel free to get in touch with me. Even if it's just to say hello, I would love to hear from you!</p>
 
 				<form onSubmit={this.handleForm}>
 			        <InputGroup
