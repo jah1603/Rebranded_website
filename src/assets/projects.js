@@ -1,4 +1,4 @@
-import nuv from './nuv-phone5.png';
+import nuv from './nuv-6.png';
 import findasaur from './findasaur2.png';
 import w2walk from './wtowalk.png';
 import w2wed from './wtowed.png';
