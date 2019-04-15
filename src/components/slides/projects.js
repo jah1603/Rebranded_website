@@ -89,10 +89,10 @@ export default class Projects extends Component {
 												<h2 style={{marginTop: 0, marginBottom: '1.5rem', color: 'white'}}>{project.name}</h2>
 												{this.renderProjectIcons(project.icons)}
 												</div>
-                        <p style={{fontSize: '0.9rem'}}>{project.description}</p>
+                        <p style={{fontSize: project.mobile === true ? '2vw' : '1.4vw'}}>{project.description}</p>
 
 												{ project.description_part_two ? (
-												<p style={{fontSize: '0.9rem'}}>{project.description_part_two}</p>
+												<p style={{fontSize: project.mobile === true ? '2vw' : '1.4vw'}}>{project.description_part_two}</p>
 											) : null
 										}
 										{ project.see_more === false ? (
