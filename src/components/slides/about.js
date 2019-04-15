@@ -20,7 +20,7 @@ export default class About extends Component {
 	render() {
 		return (
 			<div className="section second">
-				<p className="wow fadeInDown about-james" data-wow-delay="400ms">Hello, I'm <strong>James Henderson!</strong> I'm a Full Stack Developer passionate about creating robust, responsive websites and applications. Here's an overview of some of the tools I've used:</p>
+				<p className="wow fadeInDown about-james" data-wow-delay="400ms">Hello, I'm <strong>James Henderson!</strong> I'm a Full Stack Developer passionate about creating websites and applications which make a real difference to people's lives. Here's an overview of some of the tools I've used:</p>
 				<br />
 				<ul className="dev-icons">{this.renderIcons(devIcons)}</ul>
 	        </div>
