@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import WOW from 'wowjs';
 
-const name  = { color: 'white' };
 const divider = { color: 'white' };
-const marginTop = { marginTop: '12px' };
 
 export default class Intro extends Component {
 	constructor(props) {
@@ -24,9 +22,9 @@ export default class Intro extends Component {
 
 		setTimeout(() => {
 			this.setState({
-				android: {height: "50", width: "50"},
-				apple: {height: "50", width: "50"},
-				blog: {height: "50", width: "50"}
+				android: {height: this.setIconSize(), width: this.setIconSize()},
+				apple: {height: this.setIconSize(), width: this.setIconSize()},
+				blog: {height: this.setIconSize(), width: this.setIconSize()}
 			})
 		}, 100);
 
@@ -36,6 +34,18 @@ export default class Intro extends Component {
 				this.props.moveDown();
 			}
 		}, 4400)
+	}
+
+	setIconSize(){
+		if (window.innerWidth < 842 && window.innerWidth > 459){
+			return '7%';
+		}
+		else if (window.innerWidth < 460){
+			return '10%';
+		}
+		else {
+			return '4%';
+		}
 	}
 
 	writeText(content) {
@@ -55,8 +65,8 @@ export default class Intro extends Component {
 		return(
 			<div style={{height: 450}} className="section first">
 				<div className="text-container wow fadeInDown" data-wow-delay="100ms">
-	        		<h1 style={name}>JAMES<span style={divider}>/</span>HENDERSON</h1>
-	        		<p style={marginTop}>
+	        		<h1 className="james-header">JAMES<span style={divider}>/</span>HENDERSON</h1>
+	        		<p className="developer-header">
 	        			{this.state.text}
 	        			<span id="holder"></span><span className="blinking-cursor">|</span>
 	        		</p>

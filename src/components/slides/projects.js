@@ -84,15 +84,16 @@ export default class Projects extends Component {
                             width: this.state.width,
                             height: this.state.height,
 
+
                         }}>
 												<div style={{width: '100%'}}>
 												<h2 style={{marginTop: 0, marginBottom: '1.5rem', color: 'white'}}>{project.name}</h2>
 												{this.renderProjectIcons(project.icons)}
 												</div>
-                        <p style={{fontSize: project.mobile === true ? '2vw' : '1.4vw'}}>{project.description}</p>
+                        <p>{project.description}</p>
 
 												{ project.description_part_two ? (
-												<p style={{fontSize: project.mobile === true ? '2vw' : '1.4vw'}}>{project.description_part_two}</p>
+												<p>{project.description_part_two}</p>
 											) : null
 										}
 										{ project.see_more === false ? (
@@ -103,13 +104,13 @@ export default class Projects extends Component {
                         	intent={Intent.PRIMARY}
                         	onClick={() => this.learnMore(project.url)}
                         >
-												See more
+												View
 												</Button>
 											}
 
                     </Project>
                     <img
-										 key={i} style={{ width: window.innerWidth < 850 ? '80%' : '100%', marginLeft: window.innerWidth < 850 ? '10%' : 0}} src={project.image} alt={project.description}/>
+										 key={i} style={{ width: window.innerWidth < 850 ? '90%' : '100%', marginLeft: window.innerWidth < 850 ? '5%' : 0}} src={project.image} alt={project.description}/>
                 </div>
 								{project.apple === true && project.name != "Reach" ? (
 									<div>
