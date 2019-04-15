@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import projects from '../../assets/projects.js';
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import posed from "react-pose";
 import { Button, Intent, Position, Tooltip } from "@blueprintjs/core";
 
@@ -83,8 +82,6 @@ export default class Projects extends Component {
                         	display: i === this.state.index ? 'flex' : 'none',
                             width: this.state.width,
                             height: this.state.height,
-
-
                         }}>
 												<div style={{width: '100%'}}>
 												<h2 style={{marginTop: 0, marginBottom: '1.5rem', color: 'white'}}>{project.name}</h2>
@@ -112,7 +109,7 @@ export default class Projects extends Component {
                     <img
 										 key={i} style={{ width: window.innerWidth < 850 ? '90%' : '100%', marginLeft: window.innerWidth < 850 ? '5%' : 0}} src={project.image} alt={project.description}/>
                 </div>
-								{project.apple === true && project.name != "Reach" ? (
+								{project.apple === true && project.name !== "Reach" ? (
 									<div>
 								<a onClick={() => this.learnMore(project.url)}>
 									<img style={{display: 'inline-block', marginTop: '0.4rem', marginRight: '1rem', width:"14%", height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
@@ -128,7 +125,7 @@ export default class Projects extends Component {
 							) : null }
 
 
-							{project.mobile === true && project.apple != true && project.name != "Reach" ? (
+							{project.mobile === true && project.apple !== true && project.name !== "Reach" ? (
 								<div>
 							<a onClick={() => this.learnMore(project.url)}>
 								<img style={{display: 'inline-block', marginTop: '0.4rem', width:"14%", height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
