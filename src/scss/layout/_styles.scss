@@ -254,7 +254,7 @@ section {
     line-height: 1.5em;
 
     @media only screen and (max-width: 770px) {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     @media only screen and (max-width: 400px) {
@@ -275,6 +275,21 @@ section {
             @include transition-style(all 0.4s cubic-bezier(1, 0, 0.4, 1.7));
             transform: translateX(-50%) scale(1);
         }
+    }
+}
+
+.about-james {
+
+  font-size: 22px;
+
+    @media only screen and (max-width: 1024px) {
+        font-size: 21px;
+    }
+
+    @media only screen and (max-width: 500px) {
+        font-size: 14px;
+        padding: 3%;
+
     }
 }
 
@@ -599,7 +614,8 @@ label {
     }
 
     .dev-icon {
-        font-size: 50px;
+        font-size: 35px;
+        line-height: 60px;
     }
 
     .grid-item {
