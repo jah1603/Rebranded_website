@@ -452,14 +452,14 @@ section {
   width: 25%;
   margin-left: 37.5%;
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 841px) {
         width: 56%;
-        margin-left: 22%;
+        margin-left: 25%;
     }
 
     @media only screen and (max-width: 500px) {
         width: 56%;
-        margin-left: 22%;
+        margin-left: 24%;
     }
 }
 
@@ -468,9 +468,13 @@ section {
   width: 60%;
   margin-left: 20%;
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 841px) {
         width: 80%;
-        margin-left: 10%;
+        margin-left: 14%;
+    }
+    @media only screen and (max-width: 460px) {
+        width: 80%;
+        margin-left: 12%;
     }
 }
 
