@@ -111,13 +111,13 @@ export default class Projects extends Component {
                 </div>
 								{project.apple === true && project.name !== "Reach" ? (
 									<div>
-								<a onClick={() => this.learnMore(project.url)}>
-									<img style={{display: 'inline-block', marginTop: '0.4rem', marginRight: '1rem', width:"14%", height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
+								<a className="store-logo" onClick={() => this.learnMore(project.url)}>
+									<img className="store-logo" style={{display: 'inline-block', marginTop: '0.4rem', marginLeft: '0.5rem', marginRight: '0.5rem', height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
 								</a>
 
 
-								<a onClick={() => this.learnMore(project.apple_url)}>
-									<img style={{display: 'inline-block', marginTop: '0.4rem', width:"14%", height:"auto"}} src={require("../../assets/appstore.png")} alt="Android Store Link"/>
+								<a className="store-logo" onClick={() => this.learnMore(project.apple_url)}>
+									<img className="store-logo" style={{display: 'inline-block', marginTop: '0.4rem', marginLeft: '0.5rem', marginRight: '0.5rem', height:"auto"}} src={require("../../assets/appstore.png")} alt="Android Store Link"/>
 								</a>
 
 								</div>
@@ -127,8 +127,8 @@ export default class Projects extends Component {
 
 							{project.mobile === true && project.apple !== true && project.name !== "Reach" ? (
 								<div>
-							<a onClick={() => this.learnMore(project.url)}>
-								<img style={{display: 'inline-block', marginTop: '0.4rem', width:"14%", height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
+							<a className="store-logo" onClick={() => this.learnMore(project.url)}>
+								<img className="store-logo" style={{display: 'inline-block', marginTop: '0.4rem', height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
 							</a>
 
 							</div>

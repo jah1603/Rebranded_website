@@ -454,6 +454,22 @@ section {
     }
 }
 
+.store-logo {
+    display: inline-block;
+    width: 180px;
+    height: auto;
+    margin-top: 0.4rem;
+    margin-right: 20px;
+
+    @media only screen and (max-width: 841px) {
+        width: 160px;
+    }
+
+    @media only screen and (max-width: 460px) {
+        width: 80px;
+    }
+}
+
 /*--- CONTACT FORM ---*/
 
 .app-title {
