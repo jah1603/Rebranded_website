@@ -109,13 +109,14 @@ export default class Projects extends Component {
 
                     </Project>
                     <img
-										 key={i} style={{ width: project.mobile === true ? '100%' : '100%'}} src={project.image} alt={project.description}/>
+										 key={i} style={{ width: window.innerWidth < 850 ? '80%' : '100%', marginLeft: window.innerWidth < 850 ? '10%' : 0}} src={project.image} alt={project.description}/>
                 </div>
 								{project.apple === true && project.name != "Reach" ? (
 									<div>
 								<a onClick={() => this.learnMore(project.url)}>
 									<img style={{display: 'inline-block', marginTop: '0.4rem', marginRight: '1rem', width:"14%", height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
 								</a>
+
 
 								<a onClick={() => this.learnMore(project.apple_url)}>
 									<img style={{display: 'inline-block', marginTop: '0.4rem', width:"14%", height:"auto"}} src={require("../../assets/appstore.png")} alt="Android Store Link"/>
