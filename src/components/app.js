@@ -50,7 +50,9 @@ const fullpageOptions = {
               }
                 break;
             case 3:
+            if (window.innerWidth < 850){
                 toaster.display = "none";
+              }
                 linkStyles(links, "contact");
                 break;
             default:

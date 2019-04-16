@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import projects from '../../assets/projects.js';
 import posed from "react-pose";
 import { Button, Intent, Position, Tooltip } from "@blueprintjs/core";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast, Zoom } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Project = posed.div({
@@ -101,7 +101,7 @@ export default class Projects extends Component {
 					key={i}
 				>
 				<div className="toaster-container">
-				<ToastContainer autoClose={2500}/>
+				<ToastContainer transition={Zoom} position={toast.POSITION.TOP_LEFT} autoClose={2500}/>
 				</div>
 				<div
 				className={project.mobile === true ? "mobile-project-div" : "web-project-div"}
@@ -140,7 +140,7 @@ export default class Projects extends Component {
 
                     </Project>
                     <img
-										 key={i} style={{ width: window.innerWidth < 460 ? '100%' : '100%'}} src={project.image} alt={project.description}/>
+										 key={i} style={{ width: window.innerWidth < 460 ? '100%' : '92%'}} src={project.image} alt={project.description}/>
                 </div>
 								{project.apple === true && project.name !== "Reach" ? (
 									<div>
