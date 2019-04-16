@@ -53,7 +53,8 @@ export default class Projects extends Component {
  				win.focus();
 		}
 
-		playVideo(i) {
+		playVideo(i, project) {
+			if (project.video && window.innerWidth > 1200){
     	if (i) {
 				var inloc = window.location.toString();
 				if (inloc.includes("#close")){
@@ -65,6 +66,12 @@ export default class Projects extends Component {
 			}
  			win.focus();
     	}
+		}
+		else {
+
+			this.openLink(project.url);
+
+		}
     }
 
 		renderProjectIcons(icons){
@@ -123,9 +130,9 @@ export default class Projects extends Component {
                         <Button
                         	className="learn-more"
                         	intent={Intent.PRIMARY}
-                        	onClick={() => project.name === "Findasaur" || project.name === "Weather2..." ? this.playVideo(i) : this.learnMore(project.url)}
+                        	onClick={() => project.name === "Findasaur" || project.name === "Weather2..." ? this.playVideo(i, project) : this.learnMore(project.url)}
                         >
-												{project.name === "Findasaur" || project.name === "Weather2..." ? "Demo" : "View" }
+												{project.name === "Findasaur" || project.name === "Weather2..." ? "View" : "View" }
 												</Button>
 											}
 
