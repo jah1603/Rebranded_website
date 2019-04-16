@@ -18,12 +18,12 @@ const linkStyles = (links, section) => {
 
 const fullpageOptions = {
     scrollBar: true,
-    controlArrows: window.innerWidth < 850 ? false : true,
+    controlArrows: window.innerWidth < 1000 ? false : true,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
     slidesNavigation:true,
     onLeave: function(origin, destination, direction){
         let links = document.querySelectorAll('.header-links a');
-        if (window.innerWidth < 850){
+        if (window.innerWidth < 1000){
         var toaster = document.querySelector('.toaster-container');
       }
         switch(destination.index) {
@@ -31,20 +31,14 @@ const fullpageOptions = {
                 links.forEach(function(link) {
                     link.style.color = 'white';
                 });
-                if (window.innerWidth < 850){
-                toaster.display = "none";
-              }
                 break;
             case 1:
                 linkStyles(links, "about");
-                if (window.innerWidth < 850){
-                toaster.display = "none";
-              }
                 break;
             case 2:
                 linkStyles(links, "projects");
-                if (window.innerWidth < 850){
-                  if (toaster.display == null){
+                if (window.innerWidth < 1000){
+                  if (toaster.display == undefined){
                 setTimeout(() => {
                   toast("Swipe image or tap it for info")
                 }, 800);
@@ -55,15 +49,9 @@ const fullpageOptions = {
               }
                 break;
             case 3:
-            if (window.innerWidth < 850){
-                toaster.display = "none";
-              }
                 linkStyles(links, "contact");
                 break;
             default:
-            if (window.innerWidth < 850){
-                toaster.display = "none";
-              }
                 links.forEach(function(link) {
                     link.style.color = '#757575';
                 });
