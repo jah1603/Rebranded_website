@@ -45,7 +45,7 @@ const fullpageOptions = {
                 linkStyles(links, "projects");
                 if (window.innerWidth < 850){
                 setTimeout(() => {
-                  toast("Swipe image to browse or tap for info")
+                  toast("Swipe images or tap for info")
                 }, 800);
               }
                 break;
