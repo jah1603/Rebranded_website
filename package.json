@@ -2,7 +2,7 @@
   "name": "test-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bradengelhardt.com",
+  "homepage": "https://jamesahenderson.co.uk",
   "dependencies": {
     "@blueprintjs/core": "^3.6.1",
     "@fullpage/react-fullpage": "0.0.9",
