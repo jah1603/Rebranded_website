@@ -413,15 +413,15 @@ section {
     left: 1%;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent grey transparent transparent;
+    border-color: transparent white transparent transparent;
 
     @media only screen and (max-width: 842px) {
       border-width: 34.5px 0 34.5px 31px;
-      border-color: transparent grey transparent transparent;
+      border-color: transparent white transparent transparent;
     }
     @media only screen and (max-width: 460px) {
         border-width: 24.5px 22px 24.5px 0;
-        border-color: transparent grey transparent transparent;
+        border-color: transparent white transparent transparent;
     }
     &:hover {
       border-color: transparent $brand-color transparent transparent;
@@ -430,16 +430,16 @@ section {
 .fp-controlArrow.fp-next {
     right: 1%;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent grey;
+    border-color: transparent transparent transparent white;
 
     @media only screen and (max-width: 841px) {
       border-width: 34.5px 0 34.5px 31px;
-      border-color: transparent transparent transparent grey;
+      border-color: transparent transparent transparent white;
     }
 
     @media only screen and (max-width: 460px) {
         border-width: 24.5px 0 24.5px 22px;
-        border-color: transparent transparent transparent grey;
+        border-color: transparent transparent transparent white;
     }
 
     &:hover {
