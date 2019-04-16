@@ -44,9 +44,14 @@ const fullpageOptions = {
             case 2:
                 linkStyles(links, "projects");
                 if (window.innerWidth < 850){
+                  if (toaster.display == null){
                 setTimeout(() => {
-                  toast("Swipe images or tap for info")
+                  toast("Swipe image or tap it for info")
                 }, 800);
+              }
+                setTimeout(() => {
+                  toaster.display = "none";
+                }, 4900);
               }
                 break;
             case 3:

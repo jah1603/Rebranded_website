@@ -101,7 +101,7 @@ export default class Projects extends Component {
 					key={i}
 				>
 				<div className="toaster-container">
-				<ToastContainer transition={Zoom} position={toast.POSITION.TOP_LEFT} autoClose={2500}/>
+				<ToastContainer transition={Zoom} position={toast.POSITION.TOP_LEFT} autoClose={4000}/>
 				</div>
 				<div
 				className={project.mobile === true ? "mobile-project-div" : "web-project-div"}
