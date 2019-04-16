@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import projects from '../../assets/projects.js';
 import posed from "react-pose";
 import { Button, Intent, Position, Tooltip } from "@blueprintjs/core";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Project = posed.div({
 	hidden: { opacity: 0 },
@@ -16,6 +18,7 @@ export default class Projects extends Component {
 	        width: 0,
 	        height: 0,
 	        index: null,
+					overlayHidden: window.innerWidth < 460 ? false : true
         };
     }
 
@@ -40,6 +43,26 @@ export default class Projects extends Component {
 		openLink(url) {
     	if (url) {
     		let win = window.open(url, '_blank');
+ 			win.focus();
+    	}
+    }
+
+		closeModal(i){
+				var inloc = window.location.toString();
+    		let win = window.open(inloc.replace("#openModal", "").replace("2", "").replace("4", "") + "#close" + i , "_self");
+ 				win.focus();
+		}
+
+		playVideo(i) {
+    	if (i) {
+				var inloc = window.location.toString();
+				if (inloc.includes("#close")){
+					var location = inloc.replace("#close", "").replace("2", "").replace("4", "")
+					var win = window.open(location.replace("#close" + i, "") + "#openModal" + i, "_self");
+				}
+				else {
+    			var win = window.open(window.location + "#openModal" + i, "_self");
+			}
  			win.focus();
     	}
     }
@@ -70,6 +93,7 @@ export default class Projects extends Component {
 					data-wow-delay={int + "ms"}
 					key={i}
 				>
+
 				<div
 				className={project.mobile === true ? "mobile-project-div" : "web-project-div"}
 				onMouseEnter={this.handleMouseEnter.bind(this, i)}
@@ -99,9 +123,9 @@ export default class Projects extends Component {
                         <Button
                         	className="learn-more"
                         	intent={Intent.PRIMARY}
-                        	onClick={() => this.learnMore(project.url)}
+                        	onClick={() => project.name === "Findasaur" || project.name === "Weather2..." ? this.playVideo(i) : this.learnMore(project.url)}
                         >
-												View
+												{project.name === "Findasaur" || project.name === "Weather2..." ? "Demo" : "View" }
 												</Button>
 											}
 
@@ -128,7 +152,7 @@ export default class Projects extends Component {
 							{project.mobile === true && project.apple !== true && project.name !== "Reach" ? (
 								<div>
 							<a className="store-logo" onClick={() => this.learnMore(project.url)}>
-								<img className="store-logo" style={{display: 'inline-block', marginTop: '0.4rem', height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
+								<img className="store-logo" style={{display: 'inline-block', marginTop: '0.4rem', marginLeft: '0.5rem', height:"auto"}} src={require("../../assets/playstore.png")} alt="Android Store Link"/>
 							</a>
 
 							</div>
@@ -139,15 +163,11 @@ export default class Projects extends Component {
 
 
 							<div>
-							<div>
-							<a href={"#openModal" + i} style={{marginRight: '1rem', display: project.url ? 'inline-block' : "none"}}>
-								<i className="fa fa-play fa-4x"></i>
-							</a>
-							</div>
+
 
 							<div id={"openModal" + i} className="modalbg">
 							<div className="dialog" style={{marginLeft: ((11.1111111 * i) + 3).toString() + '%'}}>
-								<a href={"#close" + i} title="Close" className="close2">X</a>
+								<a onClick={() => this.closeModal(i)} title="Close" className="close2">X</a>
 								<video width="45%" style={{borderRadius: i=== 4 ? 0 : 43}} controls>
 													<source src={project.video} type="video/mp4"></source>
 													<source src={project.video} type="video/ogg"></source>

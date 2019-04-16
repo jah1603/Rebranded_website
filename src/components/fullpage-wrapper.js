@@ -7,6 +7,7 @@ import Contact from './slides/contact';
 import Footer from './slides/footer';
 import Navbar from './navbar';
 
+
 const FullpageWrapper = fullpageProps => (<ReactFullpage
     {...fullpageProps}
     render = {({ state, fullpageApi }) => {

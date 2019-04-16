@@ -16,8 +16,9 @@ const linkStyles = (links, section) => {
 
 const fullpageOptions = {
     scrollBar: true,
-    controlArrows: true,
+    controlArrows: window.innerWidth < 460 ? false : true,
     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+    slidesNavigation:true,
     onLeave: function(origin, destination, direction){
         let links = document.querySelectorAll('.header-links a');
         switch(destination.index) {
