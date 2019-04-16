@@ -100,7 +100,9 @@ export default class Projects extends Component {
 					data-wow-delay={int + "ms"}
 					key={i}
 				>
-
+				<div className="toaster-container">
+				<ToastContainer autoClose={2500}/>
+				</div>
 				<div
 				className={project.mobile === true ? "mobile-project-div" : "web-project-div"}
 				onMouseEnter={this.handleMouseEnter.bind(this, i)}
@@ -138,7 +140,7 @@ export default class Projects extends Component {
 
                     </Project>
                     <img
-										 key={i} style={{ width: window.innerWidth < 850 ? '90%' : '100%'}} src={project.image} alt={project.description}/>
+										 key={i} style={{ width: window.innerWidth < 460 ? '100%' : '100%'}} src={project.image} alt={project.description}/>
                 </div>
 								{project.apple === true && project.name !== "Reach" ? (
 									<div>

@@ -64,6 +64,7 @@ export default class Intro extends Component {
 	render() {
 		return(
 			<div style={{height: 450}} className="section first">
+
 				<div className="text-container wow fadeInDown" data-wow-delay="100ms">
 	        		<h1 className="james-header">JAMES<span style={divider}>/</span>HENDERSON</h1>
 	        		<p className="developer-header">

@@ -454,12 +454,12 @@ section {
 
     @media only screen and (max-width: 841px) {
         width: 56%;
-        margin-left: 2%;
+        margin-left: 21.5%;
     }
 
     @media only screen and (max-width: 500px) {
         width: 56%;
-        margin-left: 25%;
+        margin-left: 21.5%;
     }
 }
 
@@ -470,15 +470,15 @@ section {
 
     @media only screen and (max-width: 841px) {
         width: 80%;
-        margin-left: 14%;
+        margin-left: 10%;
     }
     @media only screen and (max-width: 460px) {
         width: 80%;
-        margin-left: 13.2%;
+        margin-left: 10%;
     }
     @media only screen and (max-width: 350px) {
         width: 80%;
-        margin-left: 14%;
+        margin-left: 10%;
     }
 }
 
@@ -672,7 +672,10 @@ label {
 
 .social-links a{
     color: white;
-    padding: 0px 2vw 0px 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 
     &:hover {
         color: $brand-color;
