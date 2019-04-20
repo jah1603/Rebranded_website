@@ -67,6 +67,7 @@ const projects = [
 		description_part_two: "I used React.js and jQuery to make the site, which features a bespoke image carousel which is responsive enough to work on mobile devices. Although I would ultimately abandon the site in favour of the more modern design seen here, it still lives on as a legacy piece.",
 		image: james,
 		url: "https://jamesahenderson.netlify.com/",
+		see_more: false,
 		icons: [{name: "React.js", class: 'devicon-react-plain colored'}, {name: "jQuery", class: 'devicon-jquery-plain-wordmark colored'}]
 	},
 	{
