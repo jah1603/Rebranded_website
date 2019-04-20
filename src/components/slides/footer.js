@@ -30,7 +30,7 @@ const Footer = () => {
 		          			<i className="fa fa-twitter fa-2x"></i>
 		          		</a>
 		          	</span>
-								<p style={{fontSize: 9}}>© James Henderson 2019. All rights reserved.</p>
+								<p style={{fontSize: 9}}>© James Henderson 2018. All rights reserved.</p>
 		        </div>
 		</div>
 	)
