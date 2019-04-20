@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/jicon.png';
 
-const Navbar = ({moveToIntro, moveToAbout, moveToPortfolio, moveToContact}) => {
+const Navbar = ({moveToIntro, moveToAbout, moveToPortfolio, moveToContact, fullpageApi}) => {
 	return (
 		<div className="nav-header">
     		<div className="nav-brand">

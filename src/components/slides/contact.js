@@ -73,7 +73,7 @@ export default class Contact extends Component {
 		return(
 			<div className="section fourth">
 				<h1 className="app-title">Contact Me</h1>
-				<p className="contact-text">Feel free to get in touch with me. Even if it's just to say hello, I would love to hear from you!</p>
+				<p className="contact-text">Feel free to get in touch with me. Whether it's to book a quick consultation appointment, or even just to say hello, I would love to hear from you!</p>
 
 				<form onSubmit={this.handleForm}>
 			        <InputGroup
@@ -104,7 +104,7 @@ export default class Contact extends Component {
 						id="message"
 						name="message"
 						className="bp3-input wow fadeInLeft"
-						placeholder="Write a message"
+						placeholder="Write me a message"
 						fill="true"
 						large="true"
 						rounded="true"
