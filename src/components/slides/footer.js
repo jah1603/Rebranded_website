@@ -26,7 +26,7 @@ const Footer = () => {
 		          		</a>
 		          	</span>
 		          	<span>
-		          		<a href="https://twitter.com/AppsLevel" target="_blank" rel="noopener noreferrer">
+		          		<a href="https://twitter.com/nuvapp" target="_blank" rel="noopener noreferrer">
 		          			<i className="fa fa-twitter fa-2x"></i>
 		          		</a>
 		          	</span>

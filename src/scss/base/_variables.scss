@@ -22,16 +22,16 @@ $brand-color: #FF6363;
 
 @-webkit-keyframes changeBgColor {
     0% {
-        background-color: #e17055;
-    }
-    25% {
         background-color: #1abc9c;
     }
-    50% {
+    25% {
         background-color: #2980b9;
     }
-    75% {
+    50% {
         background-color: #9b59b6;
+    }
+    75% {
+        background-color: #e17055;
     }
     100% {
         background-color: #e17055;
