@@ -72,7 +72,7 @@ const projects = [
 	},
 	{
 		name: 'Weather2Wed',
-		description: 'Another self-penned brief, this CodeClan group project aimed to inform and entertain in a novel and engaging way. Weather2Wed, built in line with the publish-subscribe pattern, presents historical weather snapshots for potential wedding locations throughout Britain and Ireland.',
+		description: 'Another self-penned brief, this group project aimed to inform and entertain in a novel and engaging way. Weather2Wed, built in line with the publish-subscribe pattern, presents historical weather snapshots for potential wedding locations throughout Britain and Ireland.',
 		description_part_two: "Weather data was sourced from DarkSky via coordinates from Geograph, while FourSquare and Leaflet were used to map suggested hotels and venues in and around the prospective wedding location. Weather2Wed also predicts whether the wedding date falls on a full moon, via astronomy calculations.",
 		image: w2wed,
 		url: "http://weather2wed.herokuapp.com/",
@@ -81,7 +81,7 @@ const projects = [
 	},
 	{
 		name: 'Fixture Pal',
-		description: 'This project dates back to my time at CodeClan, where I created a custom brief along with two colleagues. The end product - FixturePal - can generate the entire match schedule for a sports season (including alternating home and away games for each team) using a round-robin algorithm.',
+		description: 'This project dates back to my time at CC, where I created a custom brief along with two colleagues. The end product - FixturePal - can generate the entire match schedule for a sports season (including alternating home and away games for each team) using a round-robin algorithm.',
 		description_part_two: 'As well as being able to create a league of teams and enter match scores, users can keep track of team performance in a given league courtesy of a league table filtered by points, goal difference and goals scored. An option for logging match events in short match reports also exists, thereby enabling users to take note of goalscorers and disciplinary records.',
 		image: fixpal,
 		url: "https://github.com/jah1603/FixturePal",
