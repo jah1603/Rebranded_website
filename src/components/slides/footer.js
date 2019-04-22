@@ -15,14 +15,14 @@ const Footer = () => {
 		          			<i className="fa fa-android fa-2x"></i>
 		          		</a>
 		          	</span>
-								<span>
-		          		<a href="https://jah1603.github.io" aria-hidden="true" target="_blank" rel="noopener noreferrer">
-		          			<i className="fa fa-rss fa-2x"></i>
-		          		</a>
-		          	</span>
 		          	<span>
 		          		<a href="https://github.com/jah1603" target="_blank" rel="noopener noreferrer">
 		          			<i className="fa fa-github fa-2x"></i>
+		          		</a>
+		          	</span>
+								<span>
+		          		<a href="https://jah1603.github.io" aria-hidden="true" target="_blank" rel="noopener noreferrer">
+		          			<i className="fa fa-rss fa-2x"></i>
 		          		</a>
 		          	</span>
 		          	<span>
