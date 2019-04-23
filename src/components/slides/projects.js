@@ -75,7 +75,7 @@ export default class Projects extends Component {
     }
 
 		findProjectWidth(){
-			if (window.innerHeight > 767 && window.innerWidth < 376){
+			if (window.innerHeight > 767 && window.innerWidth < 415){
 				return '120%';
 			}
 			else if (window.innerWidth < 460){
