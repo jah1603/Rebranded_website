@@ -37,7 +37,10 @@ export default class Intro extends Component {
 	}
 
 	setIconSize(){
-		if (window.innerWidth < 842 && window.innerWidth > 459){
+		if (window.innerWidth < 1025 && window.innerWidth > 841){
+			return '6%';
+		}
+		else if (window.innerWidth < 842 && window.innerWidth > 459){
 			return '7%';
 		}
 		else if (window.innerWidth < 460){

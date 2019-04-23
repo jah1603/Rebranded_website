@@ -196,7 +196,7 @@ export default class Projects extends Component {
 
     render() {
     	return(
-			<div style={{width: '100%', backgroundColor: '#BCD4E6'}} className="section third">
+			<div style={{width: '100%', backgroundColor: '#1abc9c', border: 'none'}} className="section third">
 
 		                {this.renderProjects(projects)}
 
