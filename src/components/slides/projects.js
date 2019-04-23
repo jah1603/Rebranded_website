@@ -74,6 +74,18 @@ export default class Projects extends Component {
 		}
     }
 
+		findProjectWidth(){
+			if (window.innerHeight > 767 && window.innerWidth < 376){
+				return '120%';
+			}
+			else if (window.innerWidth < 460){
+				return '100%';
+			}
+			else {
+				return '92%';
+			}
+		}
+
 		renderProjectIcons(icons){
 			let int = 500;
 			return icons.map((icon, i) => {
@@ -140,7 +152,7 @@ export default class Projects extends Component {
 
                     </Project>
                     <img
-										 key={i} style={{ width: window.innerWidth < 460 ? '100%' : '92%'}} src={project.image} alt={project.description}/>
+										 key={i} style={{ width: this.findProjectWidth()}} src={project.image} alt={project.description}/>
                 </div>
 								{project.apple === true && project.name !== "Reach" ? (
 									<div>
@@ -196,7 +208,7 @@ export default class Projects extends Component {
 
     render() {
     	return(
-			<div style={{width: '100%', backgroundColor: '#1abc9c', border: 'none'}} className="section third">
+			<div style={{width: '100%', backgroundColor: '#BCD4E6', border: 'none'}} className="section third">
 
 		                {this.renderProjects(projects)}
 
