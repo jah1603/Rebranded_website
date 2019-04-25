@@ -62,7 +62,8 @@ export default class Projects extends Component {
 					var win = window.open(location.replace("#close" + i, "") + "#openModal" + i, "_self");
 				}
 				else {
-    			var win = window.open(window.location.replace("#contact", "").replace("#portfolio", "").replace("#about", "") + "#openModal" + i, "_self");
+					var locat = window.location.toString().replace("#contact", "").replace("#portfolio", "").replace("#about", "");
+    			var win = window.open(locat + "#openModal" + i, "_self");
 			}
  			win.focus();
     	}
