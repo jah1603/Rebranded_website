@@ -58,11 +58,11 @@ export default class Projects extends Component {
     	if (i) {
 				var inloc = window.location.toString();
 				if (inloc.includes("#close")){
-					var location = inloc.replace("#close", "").replace("2", "").replace("4", "").replace("#contact", "").replace("#portfolio", "").replace("#about", "");
+					var location = inloc.replace("#close", "").replace("2", "").replace("4", "");
 					var win = window.open(location.replace("#close" + i, "") + "#openModal" + i, "_self");
 				}
 				else {
-    			var win = window.open(window.location + "#openModal" + i, "_self");
+    			var win = window.open(window.location.replace("#contact", "").replace("#portfolio", "").replace("#about", "") + "#openModal" + i, "_self");
 			}
  			win.focus();
     	}
