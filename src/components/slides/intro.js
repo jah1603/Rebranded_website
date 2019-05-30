@@ -17,7 +17,7 @@ export default class Intro extends Component {
 	    }).init();
 
 			setTimeout(() => {
-				this.writeText("ENGINEER / PRODUCT DESIGNER");
+				this.writeText("SOFTWARE DESIGNER / ENGINEER");
 			}, 1000);
 
 		setTimeout(() => {
