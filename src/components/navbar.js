@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/jicon.png';
+import logo from '../assets/jicon2.png';
 
 const Navbar = ({moveToIntro, moveToAbout, moveToPortfolio, moveToContact, fullpageApi}) => {
 	return (
