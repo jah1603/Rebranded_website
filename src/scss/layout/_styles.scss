@@ -420,7 +420,7 @@ section {
     left: 1%;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent #FF6363 transparent transparent;
 
     @media only screen and (max-width: 842px) {
       border-width: 34.5px 0 34.5px 31px;
@@ -437,7 +437,7 @@ section {
 .fp-controlArrow.fp-next {
     right: 1%;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent white;
+    border-color: transparent transparent transparent #FF6363;
 
     @media only screen and (max-width: 841px) {
       border-width: 34.5px 0 34.5px 31px;
