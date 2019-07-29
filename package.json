@@ -2,7 +2,7 @@
   "name": "Personal-Website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jah1603.github.io/Rebranded_website",
+  "homepage": "https://jamesahenderson.co.uk",
   "dependencies": {
     "@blueprintjs/core": "^3.6.1",
     "@fullpage/react-fullpage": "0.0.9",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-   "deploy": "gh-pages -b master -d build",
+   "deploy": "gh-pages -b develop -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
