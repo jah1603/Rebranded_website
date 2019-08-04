@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "450d2aeeb4c4de5291fa",
+    "revision": "b726bae992d2de76c632",
     "url": "/static/css/main.8264c56a.chunk.css"
   },
   {
-    "revision": "450d2aeeb4c4de5291fa",
-    "url": "/static/js/main.450d2aee.chunk.js"
+    "revision": "b726bae992d2de76c632",
+    "url": "/static/js/main.b726bae9.chunk.js"
   },
   {
     "revision": "9c2dbc120b60c0eba21b",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/static/media/Zfix.85fd032a.png"
   },
   {
-    "revision": "fd690be8d9af13bca6b8f575451374e1",
-    "url": "/static/media/InvStory.fd690be8.png"
+    "revision": "f30c75afc6fb4c88fd5b5884296b4000",
+    "url": "/static/media/brightnewhomes.f30c75af.png"
   },
   {
     "revision": "21a004693d8c55ff67ef0f86a8a4e4f7",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
     "url": "/static/media/appstore.59e04262.png"
   },
   {
-    "revision": "bf67977633bf2a13a773b1cb507a3e50",
+    "revision": "cb2121b8b45ef994d7f04b52294e67f7",
     "url": "/index.html"
   }
 ];
