@@ -3,7 +3,7 @@ import findasaur from './findasaur2.png';
 import w2walk from './wtowalk.png';
 import w2wed from './wtowed.png';
 import fixpal from './Zfix.png';
-import InvStory from './InvStory.png';
+import Brightnewhomes from './brightnewhomes.png';
 import reach from './reachdating.png';
 import james from './james_site.png';
 import findasaurVid from './findasaur2.mp4';
@@ -62,13 +62,12 @@ const projects = [
 		icons: [{name: "React Native", class: 'devicon-react-plain colored'}, {name: "Android", class: 'devicon-android-plain colored'}, {name: "Heroku", class: 'devicon-heroku-plain-wordmark colored'}]
 	},
 	{
-		name: 'Website for a Developer',
-		description: 'This is my former personal website, which I designed and built entirely from scratch using no plug-ins whatsoever. Originally it was intended as a portfolio website where I would be able to document all my projects and showcase what I considered to be my best work.',
-		description_part_two: "I used React.js and jQuery to make the site, which features a bespoke image carousel which is responsive enough to work on mobile devices. Although I would ultimately abandon the site in favour of the more modern design seen here, it still lives on as a legacy piece.",
-		image: james,
-		url: "https://jamesahenderson.netlify.com/",
-		see_more: false,
-		icons: [{name: "React.js", class: 'devicon-react-plain colored'}, {name: "jQuery", class: 'devicon-jquery-plain-wordmark colored'}]
+		name: 'Bright New Homes',
+		description: 'A bespoke marketing website for a property developer looking to shift renovated units on Worthing on the south coast of England. I co-designed and co-created this beautiful and responsive website to help his business grow.',
+		image: Brightnewhomes,
+		url: "https://brightnewhomes.co.uk",
+		heroku: true,
+		icons: [{name: "React.js", class: 'devicon-react-plain-wordmark colored'}, {name: "CSS", class: 'devicon-css3-plain-wordmark colored'}, {name: "Trello", class: 'devicon-trello-plain-wordmark colored'}]
 	},
 	{
 		name: 'Weather2Wed',
@@ -80,20 +79,21 @@ const projects = [
 		icons: [{name: "JavaScript", class: 'devicon-javascript-plain colored'}, {name: "Node", class: 'devicon-nodejs-plain-wordmark colored'}, {name: "Trello", class: 'devicon-trello-plain-wordmark colored'}]
 	},
 	{
+		name: 'Website for a Developer',
+		description: 'This is my former personal website, which I designed and built entirely from scratch using no plug-ins whatsoever. Originally it was intended as a portfolio website where I would be able to document all my projects and showcase what I considered to be my best work.',
+		description_part_two: "I used React.js and jQuery to make the site, which features a bespoke image carousel which is responsive enough to work on mobile devices. Although I would ultimately abandon the site in favour of the more modern design seen here, it still lives on as a legacy piece.",
+		image: james,
+		url: "https://jamesahenderson.netlify.com/",
+		see_more: false,
+		icons: [{name: "React.js", class: 'devicon-react-plain colored'}, {name: "jQuery", class: 'devicon-jquery-plain-wordmark colored'}]
+	},
+	{
 		name: 'Fixture Pal',
-		description: 'This project dates back to my time at CC, where I created a custom brief along with two colleagues. The end product - FixturePal - can generate the entire match schedule for a sports season (including alternating home and away games for each team) using a round-robin algorithm.',
+		description: 'This project dates all the way back to 2018, when I created a custom brief along with two collaborators. The end product - FixturePal - can generate the entire match schedule for a sports season (including alternating home and away games for each team) using a round-robin algorithm.',
 		description_part_two: 'As well as being able to create a league of teams and enter match scores, users can keep track of team performance in a given league courtesy of a league table filtered by points, goal difference and goals scored. An option for logging match events in short match reports also exists, thereby enabling users to take note of goalscorers and disciplinary records.',
 		image: fixpal,
 		url: "https://github.com/jah1603/FixturePal",
 		icons: [{name: "Java", class: 'devicon-java-plain-wordmark colored'}, {name: "PSQL", class: 'devicon-postgresql-plain-wordmark colored'}, {name: "Trello", class: 'devicon-trello-plain-wordmark colored'}]
-	},
-	{
-		name: 'Invent.Story',
-		description: 'An application which enables a bookseller to monitor stock levels, profit, publishers and genres. A PSQL database was used for data persistence, allowing the user to create, edit and delete books and publishers as desired. It is also possible to browse stock by genre and record stock sales/replenishment at the click of a button.',
-		image: InvStory,
-		url: "http://invent-story.herokuapp.com",
-		heroku: true,
-		icons: [{name: "Ruby", class: 'devicon-ruby-plain colored'}, {name: "PostgreSQL", class: 'devicon-postgresql-plain-wordmark colored'}, {name: "Trello", class: 'devicon-trello-plain-wordmark colored'}]
 	},
 ]
 
