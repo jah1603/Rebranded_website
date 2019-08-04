@@ -48,12 +48,12 @@ const devIcons = [
         class: 'devicon-css3-plain-wordmark colored'
     },
     {
-        name: 'Trello',
-        class: 'devicon-trello-plain-wordmark colored'
+        name: 'MongoDB',
+        class: 'devicon-mongodb-plain-wordmark colored'
     },
 		{
-        name: 'Atom',
-        class: 'devicon-atom-plain-wordmark colored'
+        name: 'AWS',
+        class: 'devicon-amazonwebservices-plain-wordmark colored'
     },
     {
         name: 'Git',
