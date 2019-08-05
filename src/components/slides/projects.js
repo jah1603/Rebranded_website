@@ -136,7 +136,7 @@ export default class Projects extends Component {
 												</div>
                         <p>{project.description}</p>
 
-												{ project.description_part_two ? (
+												{ project.description_part_two && window.innerWidth > 440 ? (
 												<p>{project.description_part_two}</p>
 											) : null
 										}

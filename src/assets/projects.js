@@ -44,7 +44,7 @@ const projects = [
 	},
 	{
 		name: 'Reach',
-		description: "I took on this project with two colleagues based on our vision of a networking app for social influencers. We set up a ReactJS frontend to consume the Python backend using Axios. Reach is a full-stack dating platform that measures users' social reach and lets them find other users according to various preferences.",
+		description: "I took on this project with two colleagues based on our vision of a networking app for social influencers. We set up a React.js frontend to consume the Python backend using Axios. Reach is a full-stack dating platform that measures users' social reach and lets them find other users according to various preferences.",
 		description_part_two: "Featuring JSON web token authentication, a Django REST API, geolocation, swipeable cards and email activation, Reach calculates a user's total social reach by scraping their follower count on three major social media platforms.",
 		image: reach,
 		mobile: true,
