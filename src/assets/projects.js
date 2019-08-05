@@ -63,7 +63,7 @@ const projects = [
 	},
 	{
 		name: 'Bright New Homes',
-		description: 'A bespoke marketing website for a property developer looking to shift renovated units on Worthing on the south coast of England. I co-designed and co-created this beautiful and responsive website to help his business grow.',
+		description: 'A bespoke marketing website for a property developer looking to shift renovated units on Worthing in the south coast of England. I co-designed and co-created this beautiful and responsive website to help his business grow.',
 		image: Brightnewhomes,
 		url: "https://brightnewhomes.co.uk",
 		heroku: true,

@@ -23,7 +23,7 @@ const fullpageOptions = {
     slidesNavigation:true,
     onLeave: function(origin, destination, direction){
         let links = document.querySelectorAll('.header-links a');
-        if (window.innerWidth < 1000){
+        if (window.innerWidth < 1100){
         var toaster = document.querySelector('.toaster-container');
       }
         switch(destination.index) {
@@ -37,7 +37,7 @@ const fullpageOptions = {
                 break;
             case 2:
                 linkStyles(links, "projects");
-                if (window.innerWidth < 1000){
+                if (window.innerWidth < 1100){
                   if (toaster.display == undefined){
                 setTimeout(() => {
                   toast("Swipe image or tap it for info")
