@@ -24,8 +24,8 @@ const devIcons = [
 					class: 'devicon-javascript-plain colored'
 			},
     {
-        name: 'HTML5',
-        class: 'devicon-html5-plain-wordmark colored'
+        name: 'Meteor',
+        class: 'devicon-meteor-plain-wordmark colored'
     },
 		{
         name: 'Ruby',
@@ -44,8 +44,8 @@ const devIcons = [
 				class: 'devicon-jquery-plain-wordmark colored'
 		},
     {
-        name: 'CSS3',
-        class: 'devicon-css3-plain-wordmark colored'
+        name: 'Bootstrap',
+        class: 'devicon-bootstrap-plain-wordmark colored'
     },
     {
         name: 'MongoDB',
